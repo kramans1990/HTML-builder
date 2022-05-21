@@ -14,7 +14,7 @@ function readText(){
             console.log('Завершение процесса');
              process.exit();
          }
-         fs.appendFile(finalPath, '\n' + `${answer}`, function () {           
+         fs.appendFile(finalPath, `${answer}` +'\n', function () {           
           });
       readText();
     });
