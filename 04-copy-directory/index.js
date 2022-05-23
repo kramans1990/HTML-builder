@@ -21,7 +21,8 @@ async function  copyDir () {
                         console.log(error);          
                 }
                 else{
-                console.log('Удалено: ', filenamesCopy[i].name)}
+                //console.log('Удалено: ', filenamesCopy[i].name)
+            }
             }
                 );
         }
@@ -43,7 +44,7 @@ async function  copyDir () {
                   if(stats.isFile() == true){
                     fs.copyFile(fullPath, fullPathCopy, (err) => {
                         if (err) throw err;
-                        console.log('скопирован файл ' + filenames[i].name );
+                       // console.log('скопирован файл ' + filenames[i].name );
                       });
                    }     
                    }
