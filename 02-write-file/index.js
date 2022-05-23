@@ -9,9 +9,9 @@ input: process.stdin,
 output: process.stdout
 });
 function readText(){
-    readLine.question("Введите текст:" + '  ', function(answer) {
-        if(answer === 'exit'){
-            console.log('Завершение процесса');
+    readLine.question("Введите текст:" + '\n', function(answer) {
+        if(answer === 'exit'){           
+            console.log( 'Завершение процесса');
              process.exit();
          }
          fs.appendFile(finalPath, `${answer}` +'\n', function () {           
